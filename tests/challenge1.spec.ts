@@ -3,7 +3,7 @@ const fs = require("fs");
 
 describe("challenge 1", () => {
     it("should read file into two list", () => {
-        const {leftList, rightList} = readFile("./src/tests/challenge1_input_test.txt");
+        const {leftList, rightList} = readFile("./tests/challenge1_input_test.txt");
 
         expect(leftList).toEqual([3, 4, 2, 1, 3]);
         expect(rightList).toEqual([4, 3, 5, 3, 9]);
@@ -19,7 +19,7 @@ describe("challenge 1", () => {
     })
 
     it("should resolve challenge 1", () => {
-        const {leftList, rightList} = readFile("./src/tests/input.txt");
+        const {leftList, rightList} = readFile("./tests/input.txt");
 
         const distance = getDistanceBetween(leftList, rightList);
 
@@ -47,7 +47,7 @@ describe("challenge 1", () => {
 
     it("should calculate for a complete list the similary count from a file", () => {
         
-        const {leftList, rightList} = readFile("./src/tests/input.txt");
+        const {leftList, rightList} = readFile("./tests/input.txt");
 
 
         expect(similarityCount(leftList, rightList)).toBe(20719933);

@@ -40,7 +40,7 @@ describe('Challenge 3', () => {
   });
 
   it("should read file and opperate addition of mul(x,y)", () => {
-    const text = fs.readFileSync("./src/tests/challenge3_input.txt", "utf8");
+    const text = fs.readFileSync("./tests/challenge3_input.txt", "utf8");
     const numbers = getDigitNumbers(text);
 
     expect(additionMultiplyPairNumbers(numbers)).toBe(192767529);
@@ -54,7 +54,7 @@ describe('Challenge 3', () => {
   });
 
   it("should read file and opperate addition of mul(x,y) without don't instructions", () => {
-    const text = fs.readFileSync("./src/tests/challenge3_input.txt", "utf8");
+    const text = fs.readFileSync("./tests/challenge3_input.txt", "utf8");
     const textWithoutDont = removeBetweenDontAndDo(text);
     const numbers = getDigitNumbers(textWithoutDont);
 

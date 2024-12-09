@@ -92,7 +92,7 @@ describe("find xmas", () => {
     })
 
     it("should read file and count xmas verticaly horizontaly and diagonal", () => {
-        const text = fs.readFileSync("./src/tests/challenge4_input.txt", "utf8");
+        const text = fs.readFileSync("./tests/challenge4_input.txt", "utf8");
         
         expect(allXmasFor(text)).toBe(2517)
     });

@@ -42,7 +42,7 @@ describe("challenge 2", () => {
     })
 
     it("should read file and return the number of safe list", () => {
-        const lists = readFile("./src/tests/challenge2_input.txt");
+        const lists = readFile("./tests/challenge2_input.txt");
         expect(numbersOfSafeListFor(lists)).toBe(670);
     })
 })
